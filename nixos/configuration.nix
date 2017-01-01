@@ -67,6 +67,7 @@
 
   # Set your time zone.
   time.timeZone = "Europe/Berlin";
+  services.timesyncd.enable = true;
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
