@@ -64,6 +64,7 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
+  hardware.enableAllFirmware = true;
 
   # Set your time zone.
   time.timeZone = "Europe/Berlin";
