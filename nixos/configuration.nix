@@ -3,8 +3,9 @@
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
 { config, pkgs, ... }:
-hardware.bluetooth.enable = true;
+
 {
+    hardware.bluetooth.enable = true;
     hardware.graphics = {
     enable = true;
     enable32Bit = true;
