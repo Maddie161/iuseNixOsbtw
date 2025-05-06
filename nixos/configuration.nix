@@ -128,7 +128,8 @@
 	(discord-canary.override {
 		withVencord=true;
 	})
-	vscodium
+    zed-editor
+    alejandra
     spotify
     steam
     r2modman
