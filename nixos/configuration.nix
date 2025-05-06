@@ -128,7 +128,8 @@
 	(discord-canary.override {
 		withVencord=true;
 	})
-    zed-editor
+    rust-analyzer
+	  zed-editor
     alejandra
     spotify
     steam
