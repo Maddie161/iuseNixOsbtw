@@ -1,12 +1,13 @@
 # Edit this configuration file to define what should be installed on
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
-
-{ config, pkgs, ... }:
-
 {
-    hardware.bluetooth.enable = true;
-    hardware.graphics = {
+  config,
+  pkgs,
+  ...
+}: {
+  hardware.bluetooth.enable = true;
+  hardware.graphics = {
     enable = true;
     enable32Bit = true;
   };
@@ -14,7 +15,7 @@
     "nix-command"
     "flakes"
   ];
-    # Load nvidia driver for Xorg
+  # Load nvidia driver for Xorg
   services.xserver.videoDrivers = ["nvidia"];
   hardware.nvidia = {
     modesetting.enable = true;
@@ -25,10 +26,10 @@
     #Beta nvidia driver, use stable for latest stable
     package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-    ];
+  imports = [
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -105,10 +106,10 @@
   users.users.maddie = {
     isNormalUser = true;
     description = "Maddie";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = ["networkmanager" "wheel"];
     packages = with pkgs; [
       kdePackages.kate
-    #  thunderbird
+      #  thunderbird
     ];
   };
 
@@ -125,11 +126,11 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-	(discord-canary.override {
-		withVencord=true;
-	})
+    (discord-canary.override {
+      withVencord = true;
+    })
     rust-analyzer
-	  zed-editor
+    zed-editor
     alejandra
     spotify
     steam
@@ -149,8 +150,9 @@
     zig
     gcc9
     clang
-  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-  #  wget
+    steam-run
+    #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    #  wget
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -179,5 +181,4 @@
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "24.11"; # Did you read the comment?
-
 }
