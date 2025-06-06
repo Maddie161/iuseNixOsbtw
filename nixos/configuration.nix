@@ -140,7 +140,7 @@ environment.systemPackages = with pkgs; [
     spotify
     steam
     r2modman
-    libreoffice-qt6-fresh
+    libreoffice
     git
     github-cli
     mesa
