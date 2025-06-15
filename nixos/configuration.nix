@@ -117,9 +117,7 @@
       #  thunderbird
     ];
   };
-  environment.systemPackages = [
-     pkgs.everest-mons
-   ];
+
   # Enable automatic login for the user.
   services.xserver.displayManager.autoLogin.enable = true;
   services.xserver.displayManager.autoLogin.user = "maddie";
@@ -158,7 +156,7 @@ environment.systemPackages = with pkgs; [
     gcc9
     clang
     steam-run
-    everest-mons
+    fuse
     #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     #  wget
   ];
