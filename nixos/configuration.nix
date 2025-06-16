@@ -157,6 +157,8 @@ environment.systemPackages = with pkgs; [
     clang
     steam-run
     fuse
+    zenity
+    xorg.xhost
     #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     #  wget
   ];
