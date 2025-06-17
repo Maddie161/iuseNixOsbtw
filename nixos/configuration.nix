@@ -36,6 +36,9 @@
     driSupport32Bit = true;
   };
   programs.steam.enable = true;
+  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
+               "steam"
+             ];
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
