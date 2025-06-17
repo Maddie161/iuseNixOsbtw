@@ -31,6 +31,10 @@
     #Beta nvidia driver, use stable for latest stable
     package = config.boot.kernelPackages.nvidiaPackages.beta;
   };
+  {
+    hardware.opengl.enable = true;
+    hardware.opengl.driSupport32Bit = true;
+  }
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
