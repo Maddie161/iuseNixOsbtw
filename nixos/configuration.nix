@@ -11,6 +11,7 @@
       # Add any missing dynamic libraries for unpackaged programs
       # here, NOT in environment.systemPackages
       sdl3
+      ncurses6
     ];
   hardware.bluetooth.enable = true;
   hardware.graphics = {
