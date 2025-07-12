@@ -3,6 +3,9 @@
   lib,
   ...
 }: {
+  imports = [
+      ./hypr.nix
+    ];
   home = {
     username = "maddie";
     homeDirectory = "/home/maddie";
