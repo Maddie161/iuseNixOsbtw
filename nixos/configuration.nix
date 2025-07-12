@@ -82,7 +82,8 @@
   # Enable the KDE Plasma Desktop Environment.
   services.displayManager.sddm.enable = true;
   services.desktopManager.plasma6.enable = true;
-
+  programs.hyprland.enable = true;
+    programs.hyprland.package = inputs.hyprland.packages."${pkgs.system}".hyprland;
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "de";
@@ -163,6 +164,7 @@ environment.systemPackages = with pkgs; [
     gcc9
     clang
     steam-run
+    kitty
     #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     #  wget
   ];
