@@ -12,7 +12,7 @@
     settings = {
       "$mod" = "SUPER";
       "$term" = ''
-        kitty bash -e "fastfetch"
+        kitty bash
       '';
       "$runner" = "wofi --show drun";
       "$screenshotter" = "hyprshot --mode region --clipboard-only";
