@@ -4,7 +4,7 @@
   ...
 }: {
   imports = [
-      ./hypr.nix
+      ./hyprland.nix
     ];
   home = {
     username = "maddie";
