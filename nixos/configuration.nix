@@ -174,6 +174,7 @@ environment.systemPackages = with pkgs; [
     blueman
     bluez
     bluez-tools
+    waybar
     #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     #  wget
   ];
