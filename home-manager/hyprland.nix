@@ -95,6 +95,8 @@
         "discordptb"
         "steam"
         "firefox"
+        "blueman-applet"
+        "waybar"
       ];
       decoration = {
         inactive_opacity = 0.9;
