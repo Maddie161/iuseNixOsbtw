@@ -127,7 +127,9 @@
       #  thunderbird
     ];
   };
-
+  services.dbus.enable = true;
+  xdg.portal.enable = true;
+  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-hyprland ];
   # Enable automatic login for the user.
   services.xserver.displayManager.autoLogin.enable = false;
   services.xserver.displayManager.autoLogin.user = "maddie";
@@ -176,6 +178,8 @@ environment.systemPackages = with pkgs; [
     waybar
     pavucontrol
     polkit_gnome
+    xdg-desktop-portal
+    xdg-desktop-portal-hyprland
     #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     #  wget
   ];
