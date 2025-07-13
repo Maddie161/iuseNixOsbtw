@@ -14,6 +14,7 @@
       sdl3
       ncurses6
     ];
+  security.polkit.enable = true;
   services.blueman.enable = true;
     hardware.bluetooth.enable = true;
     hardware.bluetooth.powerOnBoot = true;
