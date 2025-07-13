@@ -91,7 +91,10 @@
         "$mod ALT, mouse:272, resizewindow"
       ];
       exec-once = [
-        swaync
+        "swaync"
+        "discordptb"
+        "steam"
+        "firefox"
       ];
       decoration = {
         inactive_opacity = 0.9;
