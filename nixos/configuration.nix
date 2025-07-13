@@ -14,7 +14,9 @@
       sdl3
       ncurses6
     ];
-  hardware.bluetooth.enable = true;
+  services.blueman.enable = true;
+    hardware.bluetooth.enable = true;
+    hardware.bluetooth.powerOnBoot = true;
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
