@@ -100,7 +100,7 @@
   services.printing.enable = true;
 
   # Enable sound with pipewire.
-  hardware.pulseaudio.enable = false;
+  hardware.pulseaudio.enable = true;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -175,6 +175,7 @@ environment.systemPackages = with pkgs; [
     bluez
     bluez-tools
     waybar
+    pavucontrol
     #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     #  wget
   ];
