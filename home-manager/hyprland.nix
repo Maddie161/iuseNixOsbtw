@@ -91,7 +91,7 @@
         "$mod ALT, mouse:272, resizewindow"
       ];
       exec-once = [
-
+        swaync
       ];
       decoration = {
         inactive_opacity = 0.9;
