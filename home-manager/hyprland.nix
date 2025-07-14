@@ -4,6 +4,18 @@
   inputs,
   ...
 }: {
+  services.hyprpaper = {
+      enable = true;
+      settings = {
+        preload = [
+          "~/images/wallpapers/wp.png"
+          "~/images/wallpapers/wp2.png"
+        ];
+        wallpaper = [
+          "DP-1, /home/maddie/Pictures/picssssssssssss :3/for-when-you-didnt-ask-for-the-opinion-v0-tn5t402a895f1.webp"
+        ];
+      };
+    };
   programs.kitty.enable = true;
   # Variables for Hostnames
   wayland.windowManager.hyprland = {
