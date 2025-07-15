@@ -4,18 +4,24 @@
   inputs,
   ...
 }: {
-  services.hyprpaper = {
-      enable = true;
+  wayland.windowManager.hyprland = {
       settings = {
-        preload = [
-          "~/images/wallpapers/wp.png"
-          "~/images/wallpapers/wp2.png"
-        ];
-        wallpaper = [
-          "eDP-1, /home/maddie/Pictures/picssssssssssss :3/for-when-you-didnt-ask-for-the-opinion-v0-tn5t402a895f1.webp"
+        monitor = [
+          "eDP-1, 1920x1080@120.15000, 0x0, 1"
         ];
       };
     };
+    services.hyprpaper2 = {
+      settings = {
+        preload = [
+          "~/home/maddie/Pictures/backrounds/Celeste-Trans-Header.avif"
+        ];
+        wallpaper = [
+          "eDP-1, ~/home/maddie/Pictures/backrounds/Celeste-Trans-Header.avif"
+        ];
+      };
+    };
+  }
   programs.kitty.enable = true;
   # Variables for Hostnames
   wayland.windowManager.hyprland = {
