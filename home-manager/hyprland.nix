@@ -12,7 +12,7 @@
           "~/images/wallpapers/wp2.png"
         ];
         wallpaper = [
-          "DP-1, /home/maddie/Pictures/picssssssssssss :3/for-when-you-didnt-ask-for-the-opinion-v0-tn5t402a895f1.webp"
+          "eDP-1, /home/maddie/Pictures/picssssssssssss :3/for-when-you-didnt-ask-for-the-opinion-v0-tn5t402a895f1.webp"
         ];
       };
     };
