@@ -11,7 +11,7 @@
         ];
       };
     };
-    services.hyprpaper2 = {
+    services.hyprpaper = {
       settings = {
         preload = [
           "~/home/maddie/Pictures/backrounds/Celeste-Trans-Header.avif"
