@@ -10,7 +10,6 @@
         position = "bottom";
         modules-left = [
           "hyprland/workspaces"
-          "hyprland/windowcount"
         ];
         modules-center = [
           "mpris"
