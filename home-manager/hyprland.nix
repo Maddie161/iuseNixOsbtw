@@ -120,7 +120,7 @@
         "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1"
       ];
       decoration = {
-        inactive_opacity = 0.9;
+        inactive_opacity = 0.75;
       };
       general = {
         layout = "dwindle";
