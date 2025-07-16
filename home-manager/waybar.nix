@@ -8,7 +8,7 @@
     settings = {
       mainBar = {
         position = "top";
-        height = 10;
+        height = 50;
         modules-left = [
           "hyprland/workspaces"
         ];
