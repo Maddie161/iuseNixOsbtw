@@ -4,29 +4,25 @@
   inputs,
   ...
 }: {
-  wayland.windowManager.hyprland = {
-      settings = {
-        monitor = [
-          "eDP-1, 1920x1080@120.15000, 0x0, 1"
-        ];
-      };
+  services.hyprpaper = {
+    settings = {
+      preload = [
+        "/home/maddie/Pictures/backrounds/Celeste-Trans-Header.avif"
+      ];
+      wallpaper = [
+        "eDP-1, /home/maddie/Pictures/backrounds/Celeste-Trans-Header.avif"
+      ];
     };
-    services.hyprpaper = {
-      settings = {
-        preload = [
-          "~/home/maddie/Pictures/backrounds/Celeste-Trans-Header.avif"
-        ];
-        wallpaper = [
-          "eDP-1, ~/home/maddie/Pictures/backrounds/Celeste-Trans-Header.avif"
-        ];
-      };
-    };
+  };
   programs.kitty.enable = true;
   # Variables for Hostnames
   wayland.windowManager.hyprland = {
     enable = true;
     xwayland.enable = true;
     settings = {
+      monitor = [
+        "eDP-1, 1920x1080@120.15000, 0x0, 1"
+      ];
       "$mod" = "SUPER";
       "$term" = ''
         kitty bash

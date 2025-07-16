@@ -4,8 +4,8 @@
   ...
 }: {
   imports = [
-      ./hyprland.nix
-    ];
+    ./hyprland.nix
+  ];
   home = {
     username = "maddie";
     homeDirectory = "/home/maddie";

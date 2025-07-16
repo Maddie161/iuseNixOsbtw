@@ -6,18 +6,18 @@
   pkgs,
   inputs,
   ...
-}:{
+}: {
   programs.nix-ld.enable = true;
-    programs.nix-ld.libraries = with pkgs; [
-      # Add any missing dynamic libraries for unpackaged programs
-      # here, NOT in environment.systemPackages
-      sdl3
-      ncurses6
-    ];
+  programs.nix-ld.libraries = with pkgs; [
+    # Add any missing dynamic libraries for unpackaged programs
+    # here, NOT in environment.systemPackages
+    sdl3
+    ncurses6
+  ];
   security.polkit.enable = true;
   services.blueman.enable = true;
-    hardware.bluetooth.enable = true;
-    hardware.bluetooth.powerOnBoot = true;
+  hardware.bluetooth.enable = true;
+  hardware.bluetooth.powerOnBoot = true;
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
@@ -87,7 +87,7 @@
   services.displayManager.sddm.enable = true;
   services.desktopManager.plasma6.enable = true;
   programs.hyprland.enable = true;
-    programs.hyprland.package = inputs.hyprland.packages."${pkgs.system}".hyprland;
+  programs.hyprland.package = inputs.hyprland.packages."${pkgs.system}".hyprland;
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "de";
@@ -108,9 +108,9 @@
     alsa.enable = true;
     jack.enable = true;
   };
-    # use the example session manager (no others are packaged yet so this is enabled by default,
-    # no need to redefine it in your config for now)
-    #media-session.enable = true;
+  # use the example session manager (no others are packaged yet so this is enabled by default,
+  # no need to redefine it in your config for now)
+  #media-session.enable = true;
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
@@ -145,7 +145,7 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-environment.systemPackages = with pkgs; [
+  environment.systemPackages = with pkgs; [
     (discord-ptb.override {
       withVencord = true;
     })
