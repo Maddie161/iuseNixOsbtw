@@ -6,7 +6,7 @@
 }:
 {
   services.hyprpaper = {
-    enabled = true;
+    enable = true;
     settings = {
       preload = [
         "/home/maddie/Pictures/backrounds/Celeste-Trans-Header.avif"
