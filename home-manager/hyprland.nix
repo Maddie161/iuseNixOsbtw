@@ -3,8 +3,10 @@
   lib,
   inputs,
   ...
-}: {
+}:
+{
   services.hyprpaper = {
+    enabled = true;
     settings = {
       preload = [
         "/home/maddie/Pictures/backrounds/Celeste-Trans-Header.avif"
@@ -78,15 +80,18 @@
           # workspaces
           # binds $mod + [shift +] {1..9} to [move app to] workspace {1..9}
           # also binds $mod {1..9} to move user to workspace {1..9}
-          builtins.concatLists (builtins.genList (
-              i: let
+          builtins.concatLists (
+            builtins.genList (
+              i:
+              let
                 ws = i + 1;
-              in [
+              in
+              [
                 "$mod, code:1${toString i}, workspace, ${toString ws}"
                 "$mod SHIFT, code:1${toString i}, movetoworkspacesilent, ${toString ws}"
               ]
-            )
-            9)
+            ) 9
+          )
         );
       input = {
         kb_layout = [
