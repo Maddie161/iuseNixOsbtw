@@ -14,7 +14,7 @@
         "windowcount"
       ];
       modules-center = [
-        "mpris"
+
       ];
       modules-right = [
         "tray"
