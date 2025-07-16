@@ -7,7 +7,22 @@
     enable = true;
     settings = {
       mainBar = {
-        position = "top";
+        position = "bottom";
+      };
+      modules-left = {
+        "workspaces"
+        "windowcount"
+      };
+      modules-center = {
+        "mpris"
+      };
+      modules-right = {
+        "tray"
+        "network"
+        "bluetooth"
+        "pulseaudio"
+        "cava"
+        "clock"
       };
     };
   };
