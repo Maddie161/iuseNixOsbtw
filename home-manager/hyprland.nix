@@ -66,8 +66,6 @@
 
           "$mod SHIFT, F, fullscreen"
 
-          "$mod, Y, exec, kitty --class btop --hold -e btop"
-
           "$mod, B, exec, firefox"
 
           "$mod, D, exec, $runner"
