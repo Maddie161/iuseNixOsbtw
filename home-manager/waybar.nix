@@ -7,7 +7,7 @@
     enable = true;
     settings = {
       mainBar = {
-        position = "bottom";
+        position = "top";
       };
     };
   };
