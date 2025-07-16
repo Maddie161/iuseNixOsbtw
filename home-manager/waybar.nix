@@ -9,21 +9,21 @@
       mainBar = {
         position = "bottom";
       };
-      modules-left = {
+      modules-left = [
         "workspaces"
         "windowcount"
-      };
-      modules-center = {
+      ];
+      modules-center = [
         "mpris"
-      };
-      modules-right = {
+      ];
+      modules-right = [
         "tray"
         "network"
         "bluetooth"
         "pulseaudio"
         "cava"
         "clock"
-      };
+      ];
     };
   };
 }
