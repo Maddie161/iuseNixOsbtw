@@ -5,7 +5,7 @@
 }: {
   imports = [
     ./hyprland.nix
-    ./wabar.nix
+    ./waybar.nix
   ];
   home = {
     username = "maddie";
