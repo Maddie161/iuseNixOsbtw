@@ -9,10 +9,10 @@
     enable = true;
     settings = {
       preload = [
-        "/home/maddie/Pictures/picssssssssssss :3/for-when-you-didnt-ask-for-the-opinion-v0-tn5t402a895f1.webp"
+        "/home/maddie/Pictures/backrounds/Lesbian_Pride_Flag_2019.svg.png"
       ];
       wallpaper = [
-        "eDP-1, /home/maddie/Pictures/picssssssssssss :3/for-when-you-didnt-ask-for-the-opinion-v0-tn5t402a895f1.webp"
+        "eDP-1, /home/maddie/Pictures/backrounds/Lesbian_Pride_Flag_2019.svg.png"
       ];
     };
   };
