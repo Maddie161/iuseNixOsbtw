@@ -8,10 +8,9 @@
     settings = {
       mainBar = {
         position = "bottom";
-
         modules-left = [
-          "workspaces"
-          "windowcount"
+          "hyprland/workspaces"
+          "hyprland/windowcount"
         ];
         modules-center = [
           "mpris"
