@@ -75,4 +75,5 @@ if [ "$run_cmd1" = true ] || [ "$run_cmd2" = true ]; then
   nix_generation=$(nixos-rebuild list-generations | grep current)
 
   git commit -am "Nix generation: $nix_generation"
+  git push
 fi
