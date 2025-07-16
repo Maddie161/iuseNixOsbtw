@@ -13,9 +13,6 @@
         "workspaces"
         "windowcount"
       ];
-      modules-center = [
-
-      ];
       modules-right = [
         "tray"
         "network"
