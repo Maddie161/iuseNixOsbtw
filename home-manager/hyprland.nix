@@ -9,10 +9,10 @@
     enable = true;
     settings = {
       preload = [
-        "/home/maddie/Pictures/backrounds/Celeste-Trans-Header.avif"
+        "/home/maddie/Pictures/picssssssssssss :3/for-when-you-didnt-ask-for-the-opinion-v0-tn5t402a895f1.webp"
       ];
       wallpaper = [
-        "eDP-1, /home/maddie/Pictures/backrounds/Celeste-Trans-Header.avif"
+        "eDP-1, /home/maddie/Pictures/picssssssssssss :3/for-when-you-didnt-ask-for-the-opinion-v0-tn5t402a895f1.webp"
       ];
     };
   };
