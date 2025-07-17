@@ -18,8 +18,6 @@
         modules-right = [
           "tray"
           "network"
-          "bluetooth"
-          "pulseaudio"
           "cava"
           "clock"
         ];
