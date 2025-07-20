@@ -3,8 +3,7 @@
   lib,
   inputs,
   ...
-}:
-{
+}: {
   services.hyprpaper = {
     enable = true;
     settings = {
@@ -80,15 +79,14 @@
           # also binds $mod {1..9} to move user to workspace {1..9}
           builtins.concatLists (
             builtins.genList (
-              i:
-              let
+              i: let
                 ws = i + 1;
-              in
-              [
+              in [
                 "$mod, code:1${toString i}, workspace, ${toString ws}"
                 "$mod SHIFT, code:1${toString i}, movetoworkspacesilent, ${toString ws}"
               ]
-            ) 9
+            )
+            9
           )
         );
       input = {
