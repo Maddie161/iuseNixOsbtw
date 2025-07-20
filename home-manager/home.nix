@@ -27,7 +27,7 @@
       cursor_trail = 1;
       cursor_shape = "beam";
       confirm_os_window_close = 0;
-      background_opacity = 0.2;
+      background_opacity = 0.5;
       enable_audio_bell = false;
       window_padding_width = 10;
       shell = "nu";
