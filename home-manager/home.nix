@@ -30,6 +30,8 @@
       backround_opacity = "0.2";
       enable_audio_bell = false;
       window_padding_width = 10;
+      shell = "nu";
+      notify_on_cmd_finish = "unfocused";
     };
   };
 }
