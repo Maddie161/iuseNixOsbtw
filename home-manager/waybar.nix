@@ -17,8 +17,6 @@
         ];
         modules-right = [
           "tray"
-          "network"
-          "cava"
           "clock"
         ];
       };
