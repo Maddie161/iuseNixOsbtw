@@ -27,7 +27,7 @@
       ];
       "$mod" = "SUPER";
       "$term" = ''
-        kitty bash
+        kitty nu
       '';
       "$runner" = "wofi --show drun";
       "$screenshotter" = "hyprshot --mode region --clipboard-only";
