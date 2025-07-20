@@ -10,6 +10,7 @@
         position = "top";
         height = 50;
         modules-left = [
+          "custom/power"
           "hyprland/workspaces"
         ];
         modules-center = [
@@ -19,6 +20,14 @@
           "tray"
           "clock"
         ];
+        clock = {
+
+        }
+        "custom/power" = {
+          format = "pwr";
+          tooltip = false;
+          on-click = "wlogout -b 2";
+        };
       };
     };
   };
