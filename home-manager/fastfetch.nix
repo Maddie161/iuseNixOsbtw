@@ -4,10 +4,10 @@
   ...
 }: {
 programs.fastfetch = {
-  enable = true
+  enable = true;
   settings = {
     logo = {
-     source = "~/images/fetch_images/fetch.png";
+     source = "/home/maddie/Pictures/backrounds/fastfatch.png";
       type = "kitty";
     };
   };
