@@ -24,7 +24,7 @@
 
         };
         "custom/power" = {
-          format = "pwr";
+          format = " pwr";
           tooltip = false;
           on-click = "wlogout -b 2";
         };
