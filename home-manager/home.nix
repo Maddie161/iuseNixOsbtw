@@ -25,7 +25,7 @@
     enable = true;
     settings = {
       cursor_trail = 0;
-      cursor_shape = beam;
+      cursor_shape = "beam";
       confirm_os_window_close = 0;
       dynamic_background_opacity = true;
       enable_audio_bell = false;
