@@ -22,7 +22,7 @@
         ];
         clock = {
 
-        }
+        };
         "custom/power" = {
           format = "pwr";
           tooltip = false;
