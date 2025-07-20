@@ -14,6 +14,9 @@
     sdl3
     ncurses6
   ];
+  fonts.packages = with pkgs; [
+    nerd-fonts.hack
+  ];
   security.polkit.enable = true;
   services.blueman.enable = true;
   hardware.bluetooth.enable = true;
