@@ -33,6 +33,13 @@
               today = "<span color='#ff6699'><b><u>{}</u></b></span>";
             };
           };
+          "actions" = {
+            on-click-right = "mode"
+            on-scroll-up = "tz_up"
+            on-scroll-down = "tz_down"
+            on-scroll-up = "shift_up"
+            on-scroll-down = "shift_down"
+          };
         };
         "custom/power" = {
           format = " pwr";
