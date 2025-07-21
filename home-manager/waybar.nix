@@ -24,7 +24,7 @@
           interval = 60;
             tooltip = true;
             format = "{:%H.%M}";
-            tooltip-format = "{:%Y-%m-%d}";
+            tooltip-format = "{:%d-%m-%Y}";
         };
         "custom/power" = {
           format = " pwr";
