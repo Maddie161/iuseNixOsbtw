@@ -13,6 +13,7 @@
     # here, NOT in environment.systemPackages
     sdl3
     ncurses6
+    libicu
   ];
   fonts.packages = with pkgs; [
     nerd-fonts.hack
