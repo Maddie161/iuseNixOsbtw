@@ -14,6 +14,7 @@
     sdl3
     ncurses6
     icu
+    libc.so.6
   ];
   fonts.packages = with pkgs; [
     nerd-fonts.hack
