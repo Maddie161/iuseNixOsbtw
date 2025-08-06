@@ -195,7 +195,7 @@
     hyfetch
     nushell
     everest-mons
-    olympus-24.11.23.01
+    adobe-reader
     #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     #  wget
   ];
