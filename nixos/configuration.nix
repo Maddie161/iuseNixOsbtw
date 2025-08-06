@@ -136,9 +136,6 @@
       xdg-desktop-portal-gtk
     ];
   };
-  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
-    "adobe-reader"
-  ];
   # Enable automatic login for the user.
   services.xserver.displayManager.autoLogin.enable = false;
   services.xserver.displayManager.autoLogin.user = "maddie";
