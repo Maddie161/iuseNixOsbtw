@@ -140,6 +140,9 @@
   services.xserver.displayManager.autoLogin.enable = false;
   services.xserver.displayManager.autoLogin.user = "maddie";
 
+  permittedInsecurePackages = [
+    "adobe-reader-9.5.5"
+  ];
   # Install firefox.
   programs.firefox.enable = true;
 

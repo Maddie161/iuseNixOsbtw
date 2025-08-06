@@ -22,9 +22,9 @@
         ];
         clock = {
           interval = 60;
-            tooltip = true;
-            format = "{:%H.%M}";
-            tooltip-format = "{:%d-%m-%Y}";
+          tooltip = true;
+          format = "{:%H.%M}";
+          tooltip-format = "{:%d-%m-%Y}";
         };
         "custom/power" = {
           format = " pwr";
