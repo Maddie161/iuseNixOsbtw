@@ -139,10 +139,6 @@
   # Enable automatic login for the user.
   services.xserver.displayManager.autoLogin.enable = false;
   services.xserver.displayManager.autoLogin.user = "maddie";
-
-  permittedInsecurePackages = [
-    "adobe-reader-9.5.5"
-  ];
   # Install firefox.
   programs.firefox.enable = true;
 
@@ -197,7 +193,7 @@
     hyfetch
     nushell
     everest-mons
-    adobe-reader
+    masterpdfeditor
     #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     #  wget
   ];
