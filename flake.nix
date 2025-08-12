@@ -5,6 +5,9 @@
     # Nixpkgs
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
+    #suyu
+    suyu.url = "git+https://git.suyu.dev/suyu/nix-flake";
+    suyu.inputs.nixpkgs.follows = "nixpkgs";
     # Home manager
     home-manager = {
       url = "github:nix-community/home-manager";
