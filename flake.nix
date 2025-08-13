@@ -4,10 +4,10 @@
   inputs = {
     # Nixpkgs
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgsstable24.url = "github:NixOS/nixpkgs/nixos-24.05";
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
     #suyu
     suyu.url = "git+https://github.com/Noodlez1232/suyu-flake";
-    suyu.inputs.nixpkgs.follows = "nixpkgs";
     # Home manager
     home-manager = {
       url = "github:nix-community/home-manager";
