@@ -8,6 +8,7 @@
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
     #suyu
     suyu.url = "git+https://github.com/Noodlez1232/suyu-flake";
+    suyu.inputs.nixpkgs.follows = "nixpkgsstable24";
     # Home manager
     home-manager = {
       url = "github:nix-community/home-manager";
