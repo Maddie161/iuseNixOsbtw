@@ -197,6 +197,7 @@
     masterpdfeditor
     inputs.suyu.packages.x86_64-linux.suyu
     tetrio-desktop
+    dotnetCorePackages.sdk_9_0_1xx-bin
     #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     #  wget
   ];
