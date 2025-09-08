@@ -17,7 +17,7 @@
   programs.git = {
     enable = true;
     userName = "maddie";
-    userEmail = "egonbold@gmx.de";
+    userEmail = "madelinebold@gmail.com";
     extraConfig = {
       pull.rebase = "true";
     };
@@ -34,5 +34,9 @@
       shell = "nu";
       notify_on_cmd_finish = "unfocused";
     };
+  };
+  programms.nushell = {
+    enable = true;
+      configFile.source = ./config.nu;
   };
 }
