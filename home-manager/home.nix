@@ -35,7 +35,7 @@
       notify_on_cmd_finish = "unfocused";
     };
   };
-  programms.nushell = {
+  programs.nushell = {
     enable = true;
       configFile.source = ./config.nu;
   };
