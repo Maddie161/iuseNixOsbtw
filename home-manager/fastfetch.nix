@@ -14,33 +14,33 @@
         {
           type = "os";
           key = " ";
-          keyColor = "purple";
+          keyColor = "pink";
         }
         {
           type = "packages";
           key = " ";
-          keyColor = "purple";
+          keyColor = "pink";
         }
         {
           type = "shell";
           key = " ";
-          keyColor = "purple";
+          keyColor = "pink";
         }
         {
           type = "terminal";
           key = " ";
-          keyColor = "purple";
+          keyColor = "pink";
         }
         {
           type = "wm";
           key = "wm";
-          keyColor = "purple";
+          keyColor = "pink";
         }
         "break"
         {
           type = "uptime";
           key = " ";
-          keyColor = "purple";
+          keyColor = "pink";
         }
       ];
     };
