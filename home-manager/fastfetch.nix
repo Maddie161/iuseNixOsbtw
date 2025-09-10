@@ -7,7 +7,7 @@
     enable = true;
     settings = {
       logo = {
-        source = "/home/maddie/Pictures/backrounds/fastfatch.png";
+        source = "/home/maddie/Pictures/backrounds/fastfetch.png";
         type = "kitty";
       };
     };

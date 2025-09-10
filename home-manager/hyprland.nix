@@ -26,7 +26,7 @@
       ];
       "$mod" = "SUPER";
       "$term" = ''
-        kitty nu -e fastfetch
+        kitty nu -e hyfetch
       '';
       "$runner" = "wofi --show drun";
       "$screenshotter" = "hyprshot --mode region --clipboard-only";
