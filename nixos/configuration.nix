@@ -138,7 +138,7 @@
     ];
   };
   # Enable automatic login for the user.
-  services.xserver.displayManager.autoLogin.enable = false;
+  services.xserver.displayManager.autoLogin.enable = true;
   services.xserver.displayManager.autoLogin.user = "maddie";
   # Install firefox.
   programs.firefox.enable = true;
@@ -198,6 +198,7 @@
     inputs.suyu.packages.x86_64-linux.suyu
     tetrio-desktop
     dotnetCorePackages.sdk_9_0_1xx-bin
+    helix
     #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     #  wget
   ];
