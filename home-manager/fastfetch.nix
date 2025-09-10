@@ -42,7 +42,7 @@
                   key = " ";
                   keyColor = "purple";
                 }
-      ]
+      ];
     };
   };
 }
