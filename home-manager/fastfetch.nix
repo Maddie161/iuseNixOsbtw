@@ -9,7 +9,7 @@
       logo = {
         source = "/home/maddie/Pictures/backrounds/fastfetch.png";
         type = "kitty";
-        logo-position = "bottom";
+        logo-position = "left";
         };
       modules = [
         {
