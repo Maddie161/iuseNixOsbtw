@@ -36,7 +36,6 @@
           key = "wm";
           keyColor = "#800080";
         }
-        "break"
         {
           type = "uptime";
           key = " ";
