@@ -31,7 +31,6 @@
         "break"
         "break"
         "break"
-        "break"
         {
           type = "os";
           key = " ";
