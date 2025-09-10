@@ -11,6 +11,14 @@
         type = "kitty";
         };
       modules = [
+        "break"
+        "break"
+        "break"
+        "break"
+        "break"
+        "break"
+        "break"
+        "break"
         {
           type = "os";
           key = " ";
@@ -21,6 +29,7 @@
           key = " ";
           keyColor = "light_blue";
         }
+        "break"
         {
           type = "shell";
           key = " ";
@@ -31,6 +40,7 @@
           key = " ";
           keyColor = "#008000";
         }
+        "break"
         {
           type = "wm";
           key = "wm";
