@@ -9,9 +9,34 @@
       logo = {
         source = "/home/maddie/Pictures/backrounds/fastfetch.png";
         type = "kitty";
-        position = "right";
+        position = "left";
         };
       modules = [
+        "break"
+        "break"
+        "break"
+        "break"
+        "break"
+        "break"
+        "break"
+        "break"
+        "break"
+        "break"
+        "break"
+        "break"
+        "break"
+        "break"
+        "break"
+        "break"
+        "break"
+        "break"
+        "break"
+        "break"
+        "break"
+        "break"
+        "break"
+        "break"
+        "break"
         {
           type = "os";
           key = " ";
