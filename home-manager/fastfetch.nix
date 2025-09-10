@@ -6,10 +6,10 @@
   programs.fastfetch = {
     enable = true;
     settings = {
-      logo = {
-        source = "/home/maddie/Pictures/backrounds/fastfetch.png";
-        type = "kitty";
-      };
+      #logo = {
+       # source = "/home/maddie/Pictures/backrounds/fastfetch.png";
+        #type = "kitty";
+        #};
       modules = [
         {
           type = "os";
