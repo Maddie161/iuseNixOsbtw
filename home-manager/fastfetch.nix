@@ -14,22 +14,22 @@
         {
           type = "os";
           key = " ";
-          keyColor = "#800080";
+          keyColor = "light_blue";
         }
         {
           type = "packages";
           key = " ";
-          keyColor = "#800080";
+          keyColor = "light_blue";
         }
         {
           type = "shell";
           key = " ";
-          keyColor = "#800080";
+          keyColor = "#008000";
         }
         {
           type = "terminal";
           key = " ";
-          keyColor = "#800080";
+          keyColor = "#008000";
         }
         {
           type = "wm";
