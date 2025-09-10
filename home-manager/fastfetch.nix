@@ -9,16 +9,9 @@
       logo = {
         source = "/home/maddie/Pictures/backrounds/fastfetch.png";
         type = "kitty";
+        logo-position = "bottom"
         };
       modules = [
-        "break"
-        "break"
-        "break"
-        "break"
-        "break"
-        "break"
-        "break"
-        "break"
         {
           type = "os";
           key = " ";
