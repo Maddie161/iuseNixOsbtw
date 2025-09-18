@@ -1,8 +1,8 @@
 #! /usr/bin/env nix-shell
-#! nix-shell -i bash -p bash git 
+#! nix-shell -i bash -p bash git
 
 #command 1: sudo nixos-rebuild switch --flake .#desktop
-#command 2: home-manager switch --flake .#vlad@desktop
+#command 2: home-manager switch --flake .#maddie@desktop
 git add *&>/dev/null
 # Display help message
 show_help() {
