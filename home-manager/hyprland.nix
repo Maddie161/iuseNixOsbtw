@@ -8,10 +8,10 @@
     enable = true;
     settings = {
       preload = [
-        "/home/maddie/Pictures/backrounds/Celeste-Trans-Header.avif"
+        "/home/maddie/Pictures/backrounds/transflag.png"
       ];
       wallpaper = [
-        "eDP-1, /home/maddie/Pictures/backrounds/Celeste-Trans-Header.avif"
+        "eDP-1, /home/maddie/Pictures/backrounds/transflag.png"
       ];
     };
   };
