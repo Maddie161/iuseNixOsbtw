@@ -8,10 +8,10 @@
     enable = true;
     settings = {
       preload = [
-        "/home/maddie/Pictures/backrounds/Lesbian_Pride_Flag_2019.svg.png"
+        "/home/maddie/Pictures/backrounds/Celeste-Trans-Header.avif"
       ];
       wallpaper = [
-        "eDP-1, /home/maddie/Pictures/backrounds/Lesbian_Pride_Flag_2019.svg.png"
+        "eDP-1, /home/maddie/Pictures/backrounds/Celeste-Trans-Header.avif"
       ];
     };
   };
