@@ -8,7 +8,7 @@
     enable = true;
     settings = {
       preload = [
-        "/home/maddie/Pictures/backrounds/transflag.png"
+        "/home/maddie/Pictures/backrounds/transbiancats.png"
       ];
       wallpaper = [
         "eDP-1, /home/maddie/Pictures/backrounds/transflag.png"
