@@ -8,10 +8,10 @@
     enable = true;
     settings = {
       preload = [
-        "/home/maddie/Pictures/backrounds/transbiancats.png"
+        "/home/maddie/Pictures/backrounds/wallpaper.png"
       ];
       wallpaper = [
-        "eDP-1, /home/maddie/Pictures/backrounds/transflag.png"
+        "eDP-1, /home/maddie/Pictures/backrounds/wallpaper.png"
       ];
     };
   };
