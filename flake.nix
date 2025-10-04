@@ -6,9 +6,6 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgsstable24.url = "github:NixOS/nixpkgs/nixos-24.05";
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
-    #suyu
-    suyu.url = "git+https://github.com/Noodlez1232/suyu-flake";
-    suyu.inputs.nixpkgs.follows = "nixpkgsstable24";
     # Home manager
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -32,7 +29,14 @@
         specialArgs = {inherit inputs outputs;};
         # > Our main nixos configuration file <
         modules = [
-          ./nixos/configuration.nix
+          ./device-specific/laptop/configuration.nix
+        ];
+      };
+      desktop = nixpkgs.lib.nixosSystem {
+        specialArgs = {inherit inputs outputs;};
+        # > Our main nixos configuration file <
+        modules = [
+          ./device-specific/desktop/configuration.nix
         ];
       };
     };
@@ -45,7 +49,15 @@
         extraSpecialArgs = {inherit inputs outputs;};
         # > Our main home-manager configuration file <
         modules = [
-          ./home-manager/home.nix
+          ./device-specific/laptop/home.nix
+        ];
+      };
+      "maddie@desktop" = home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages.x86_64-linux; # Home-manager requires 'pkgs' instance
+        extraSpecialArgs = {inherit inputs outputs;};
+        # > Our main home-manager configuration file <
+        modules = [
+          ./device-specific/desktop/home.nix
         ];
       };
     };

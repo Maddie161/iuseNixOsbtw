@@ -49,24 +49,6 @@
         "type": "github"
       }
     },
-    "flake-utils": {
-      "inputs": {
-        "systems": "systems_2"
-      },
-      "locked": {
-        "lastModified": 1710146030,
-        "narHash": "sha256-SZ5L6eA7HJ/nmkzGG7/ISclqe6oZdOZTNoesiInkXPQ=",
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "rev": "b1d9ab70662946ef0850d488da1c9019f3a9752a",
-        "type": "github"
-      },
-      "original": {
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "type": "github"
-      }
-    },
     "gitignore": {
       "inputs": {
         "nixpkgs": [
@@ -446,29 +428,7 @@
         "home-manager": "home-manager",
         "hyprland": "hyprland",
         "nixpkgs": "nixpkgs_2",
-        "nixpkgsstable24": "nixpkgsstable24",
-        "suyu": "suyu"
-      }
-    },
-    "suyu": {
-      "inputs": {
-        "flake-utils": "flake-utils",
-        "nixpkgs": [
-          "nixpkgsstable24"
-        ]
-      },
-      "locked": {
-        "lastModified": 1726259531,
-        "narHash": "sha256-84sIM3Gd7e6PhjsBT2EiiAInJlKQsb4HpgUPTYr6eg0=",
-        "ref": "refs/heads/main",
-        "rev": "e3ea28163248edaf5fe2a65f92e9ef3593bdc20a",
-        "revCount": 22,
-        "type": "git",
-        "url": "https://github.com/Noodlez1232/suyu-flake"
-      },
-      "original": {
-        "type": "git",
-        "url": "https://github.com/Noodlez1232/suyu-flake"
+        "nixpkgsstable24": "nixpkgsstable24"
       }
     },
     "systems": {
@@ -483,21 +443,6 @@
       "original": {
         "owner": "nix-systems",
         "repo": "default-linux",
-        "type": "github"
-      }
-    },
-    "systems_2": {
-      "locked": {
-        "lastModified": 1681028828,
-        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
-        "owner": "nix-systems",
-        "repo": "default",
-        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nix-systems",
-        "repo": "default",
         "type": "github"
       }
     },
