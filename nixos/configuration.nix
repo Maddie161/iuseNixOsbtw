@@ -211,6 +211,8 @@
   #   enable = true;
   #   enableSSHSupport = true;
   # };
+  services.openssh.settings.PasswordAuthentication = false;
+  services.openssh.settings.PubkeyAuthentication = true;
   users.users.maddie = {
     openssh.authorizedKeys.keys = [
       "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEJ73TbbVMOj6ZSwRZC7jJYHn8RHV5WnFyVjw46lw88e"
