@@ -7,6 +7,8 @@
   inputs,
   ...
 }: {
+  imports = [
+  ];
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [
     # Add any missing dynamic libraries for unpackaged programs
@@ -46,10 +48,6 @@
     driSupport32Bit = true;
   };
   programs.steam.enable = true;
-  imports = [
-    # Include the results of the hardware scan.
-    ./hardware-configuration.nix
-  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
