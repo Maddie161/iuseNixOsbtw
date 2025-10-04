@@ -211,7 +211,10 @@
   #   enable = true;
   #   enableSSHSupport = true;
   # };
-
+  openssh.authorizedKeys.keys = [
+    "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEJ73TbbVMOj6ZSwRZC7jJYHn8RHV5WnFyVjw46lw88e"
+    "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIM5fch61tl8WzpUs3Uwp8CkCgVaFZxfKxaDRue3tUZ3H"
+  ];
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
