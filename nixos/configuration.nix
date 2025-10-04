@@ -118,14 +118,6 @@
   # services.xserver.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.maddie = {
-    isNormalUser = true;
-    extraGroups = ["networkmanager" "wheel"];
-    packages = with pkgs; [
-      kdePackages.kate
-      #  thunderbird
-    ];
-  };
   services.dbus.enable = true;
   xdg.portal = {
     enable = true;
@@ -214,6 +206,10 @@
   services.openssh.settings.PasswordAuthentication = false;
   services.openssh.settings.PubkeyAuthentication = true;
   users.users.maddie = {
+    isNormalUser = true;
+    home = "/home/maddie";
+    createHome = true;
+    extraGroups = ["networkmanager" "wheel"];
     openssh.authorizedKeys.keys = [
       "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEJ73TbbVMOj6ZSwRZC7jJYHn8RHV5WnFyVjw46lw88e"
       "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIM5fch61tl8WzpUs3Uwp8CkCgVaFZxfKxaDRue3tUZ3H"
