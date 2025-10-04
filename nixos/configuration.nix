@@ -152,7 +152,7 @@
     rust-analyzer
     zed-editor
     alejandra
-    spotifyd
+    spotify-qt
     steam
     r2modman
     libreoffice
