@@ -153,7 +153,7 @@
     zed-editor
     alejandra
     spotify-qt
-    spotify
+    chromium
     steam
     r2modman
     libreoffice
