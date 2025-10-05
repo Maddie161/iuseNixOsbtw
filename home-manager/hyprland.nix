@@ -8,10 +8,10 @@
     enable = true;
     settings = {
       preload = [
-        "~/Pictures/backrounds/wallpaper.png"
+        "/home/maddie/Pictures/backrounds/wallpaper.png"
       ];
       wallpaper = [
-        "eDP-1, ~/Pictures/backrounds/wallpaper.png"
+        "eDP-1, /home/maddie/Pictures/backrounds/wallpaper.png"
       ];
     };
   };
