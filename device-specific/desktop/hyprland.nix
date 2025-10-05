@@ -10,9 +10,11 @@
       preload = [
         "~/Pictures/backrounds/wallpaper.png"
       ];
-      wallpaper = [
-        "DP-3, ~/Pictures/backrounds/wallpaper.png"
-      ];
+      monitors = {
+        "DP-3" = {
+          path = "~/Pictures/backrounds/wallpaper.png";
+        style = "fill";
+      };
     };
   };
 }
