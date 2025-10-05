@@ -105,6 +105,7 @@
         "$mod ALT, mouse:272, resizewindow"
       ];
       exec-once = [
+        "nu ~/Documents/wifi.nu"
         "swaync"
         "discordptb"
         "steam"
