@@ -20,6 +20,9 @@
   fonts.packages = with pkgs; [
     nerd-fonts.hack
   ];
+  boot.extraModprobeConfig = ''
+    options btusb reset=1
+  '';
   security.polkit.enable = true;
   services.blueman.enable = true;
   hardware.enableAllFirmware = true;
