@@ -23,6 +23,7 @@
   boot.extraModprobeConfig = ''
     options btusb reset=1
   '';
+  boot.kernelPackages = pkgs.linuxPackages_latest;
   security.polkit.enable = true;
   services.blueman.enable = true;
   hardware.enableAllFirmware = true;
