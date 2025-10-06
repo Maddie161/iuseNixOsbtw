@@ -26,6 +26,8 @@
   hardware.bluetooth.enable = true;
   hardware.bluetooth.package = pkgs.bluez;
   hardware.bluetooth.powerOnBoot = true;
+  hardware.firmware = [ pkgs.linux-firmware ];
+  boot.extraModulePackages = [ config.boot.kernelPackages.rtlbt-firmware ];
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
