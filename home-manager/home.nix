@@ -1,7 +1,7 @@
 {
   pkgs,
   lib,
-  catpuccin
+  catpuccin,
   ...
 }: {
   imports = [
