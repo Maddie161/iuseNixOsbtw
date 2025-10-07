@@ -54,6 +54,7 @@
         # > Our main home-manager configuration file <
         modules = [
           ./device-specific/laptop/home.nix
+          catppuccin.homeManagerModules.catppuccin
         ];
       };
       "maddie@desktop" = home-manager.lib.homeManagerConfiguration {
@@ -62,6 +63,7 @@
         # > Our main home-manager configuration file <
         modules = [
           ./device-specific/desktop/home.nix
+          catppuccin.homeManagerModules.catppuccin
         ];
       };
     };
