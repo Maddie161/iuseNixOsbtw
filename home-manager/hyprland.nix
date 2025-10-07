@@ -104,18 +104,6 @@
         # alt left click to also resize
         "$mod ALT, mouse:272, resizewindow"
       ];
-      exec-once = [
-        "nu ~/Documents/wifi.nu"
-        "swaync"
-        "discordptb"
-        "steam"
-        "firefox"
-        "blueman-applet"
-        "waybar"
-        "spotify"
-        "hyprsunset --temperature 4500"
-        "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1"
-      ];
       decoration = {
         inactive_opacity = 0.969;
       };
