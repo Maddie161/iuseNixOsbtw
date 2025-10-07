@@ -31,6 +31,7 @@
         # > Our main nixos configuration file <
         modules = [
           ./device-specific/laptop/configuration.nix
+          catppuccin.nixosModules.catppuccin
         ];
       };
       desktop = nixpkgs.lib.nixosSystem {
@@ -38,6 +39,7 @@
         # > Our main nixos configuration file <
         modules = [
           ./device-specific/desktop/configuration.nix
+          catppuccin.nixosModules.catppuccin
         ];
       };
     };
