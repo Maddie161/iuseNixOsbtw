@@ -1,6 +1,7 @@
 {
   pkgs,
   lib,
+  catpuccin
   ...
 }: {
   imports = [
@@ -22,6 +23,14 @@
       pull.rebase = "true";
     };
   };
+  catppuccin.flavor = "mocha";
+    catppuccin.enable = true;
+    catppuccin.cursors = {
+      enable = true;
+      flavor = "latte";
+      accent = "mauve";
+    };
+  catppuccin.zed.enable = false;
   programs.kitty = {
     enable = true;
     settings = {
