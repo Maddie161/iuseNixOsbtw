@@ -10,7 +10,7 @@
         source = "/home/maddie/Pictures/backrounds/fastfetch.png";
         type = "kitty";
         position = "left";
-        };
+      };
       modules = [
         "break"
         "break"
