@@ -9,6 +9,9 @@
     ./waybar.nix
     ./fastfetch.nix
   ];
+  home.packages = with pkgs; [
+    element-desktop
+  ];
   home = {
     username = "maddie";
     homeDirectory = "/home/maddie";
