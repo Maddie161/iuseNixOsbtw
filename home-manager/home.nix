@@ -9,9 +9,6 @@
     ./waybar.nix
     ./fastfetch.nix
   ];
-  home.packages = with pkgs; [
-    element-desktop
-  ];
   home = {
     username = "maddie";
     homeDirectory = "/home/maddie";
@@ -45,6 +42,7 @@
       shell = "nu";
       notify_on_cmd_finish = "unfocused";
     };
+    catppuccin.element-desktop.enable = false;
     exec-once = [
       "swaync"
       "waybar"

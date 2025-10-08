@@ -13,7 +13,7 @@
     };
     catppuccin.url = "github:catppuccin/nix";
   };
-
+  catppuccin.element-desktop.enable = false;
   outputs = {
     self,
     nixpkgs,
