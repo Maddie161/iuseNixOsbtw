@@ -6,7 +6,7 @@
 }: {
   wayland.windowManager.hyprland = {
     settings = {
-      exec-once = [
+      exec-once = ''
         "swaync"
         "discordptb"
         "steam"
@@ -15,7 +15,7 @@
         "waybar"
         "hyprsunset -t 4500"
         "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1"
-      ];
+      '';
     };
   };
 }
