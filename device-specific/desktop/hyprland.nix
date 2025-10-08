@@ -15,5 +15,5 @@
       "hyprsunset --temperature 4500"
       "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1"
     ];
-  }
+  };
 }
