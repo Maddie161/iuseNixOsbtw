@@ -13,14 +13,7 @@
     };
     catppuccin.url = "github:catppuccin/nix";
   };
-  outputs = (
-    self,
-    nixpkgs,
-    home-manager,
-    hyprland,
-    catppuccin,
-    ...
-  ) @ inputs: let
+  outputs = { self, nixpkgs, home-manager, hyprland, catppuccin, ... }@inputs: let
     inherit (self) outputs;
   in {
     # NixOS configuration entrypoint
