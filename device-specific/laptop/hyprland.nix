@@ -1,11 +1,5 @@
-{
-  pkgs,
-  lib,
-  inputs,
-  ...
-}: {
+{ pkgs, lib, inputs, ... }: {
   wayland.windowManager.hyprland.settings = {
-    # exec-once should be a single string with commands separated by newlines
     exec-once = ''
       swaync
       blueman-applet
