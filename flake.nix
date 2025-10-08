@@ -12,11 +12,6 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    # Catppuccin theme
-    catppuccin = {
-      url = "github:catppuccin/nix";
-    };
   };
 
   outputs = { self, nixpkgs, nixpkgsstable24, home-manager, hyprland, catppuccin, ... }@inputs:
@@ -29,7 +24,6 @@
           specialArgs = { inherit inputs; };
           modules = [
             ./device-specific/laptop/configuration.nix
-            catppuccin.nixosModules.catppuccin
           ];
         };
 
@@ -37,7 +31,6 @@
           specialArgs = { inherit inputs; };
           modules = [
             ./device-specific/desktop/configuration.nix
-            catppuccin.nixosModules.catppuccin
           ];
         };
       };
@@ -48,7 +41,7 @@
           extraSpecialArgs = { inherit inputs; };
           modules = [
             ./device-specific/laptop/home.nix
-            catppuccin.homeManagerModules.catppuccin
+            ./device-specific/laptop/hyprland.nix
           ];
         };
 
@@ -57,7 +50,7 @@
           extraSpecialArgs = { inherit inputs; };
           modules = [
             ./device-specific/desktop/home.nix
-            catppuccin.homeManagerModules.catppuccin
+            ./device-specific/desktop/hyprland.nix
           ];
         };
       };

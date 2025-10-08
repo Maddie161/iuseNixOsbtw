@@ -1,7 +1,6 @@
 {
   pkgs,
   lib,
-  catppuccin,
   ...
 }: {
   imports = [
@@ -23,13 +22,7 @@
       pull.rebase = "true";
     };
   };
-  catppuccin.flavor = "mocha";
-    catppuccin.cursors = {
-      enable = true;
-      flavor = "latte";
-      accent = "mauve";
-    };
-  catppuccin.zed.enable = false;
+
   programs.kitty = {
     enable = true;
     settings = {
@@ -42,7 +35,6 @@
       shell = "nu";
       notify_on_cmd_finish = "unfocused";
     };
-    catppuccin.element-desktop.enable = false;
     exec-once = [
       "swaync"
       "waybar"
