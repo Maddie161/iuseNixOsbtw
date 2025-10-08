@@ -13,15 +13,14 @@
     };
     catppuccin.url = "github:catppuccin/nix";
   };
-  catppuccin.element-desktop.enable = false;
-  outputs = {
+  outputs = (
     self,
     nixpkgs,
     home-manager,
     hyprland,
     catppuccin,
     ...
-  } @ inputs: let
+  ) @ inputs: let
     inherit (self) outputs;
   in {
     # NixOS configuration entrypoint
