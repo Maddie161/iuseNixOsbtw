@@ -14,7 +14,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, nixpkgsstable24, home-manager, hyprland, catppuccin, ... }@inputs:
+  outputs = { self, nixpkgs, nixpkgsstable24, home-manager, hyprland, ... }@inputs:
     let
       system = "x86_64-linux";
       pkgs = import nixpkgs { inherit system; };
