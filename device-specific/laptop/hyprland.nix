@@ -4,7 +4,7 @@
       "swaync"
       "blueman-applet"
       "waybar"
-      "hyprsunset -t 4500 -g 10"
+      "hyprsunset -t 4500 -g 20"
       "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1"
     ];
   };
