@@ -4,7 +4,6 @@
       "swaync"
       "blueman-applet"
       "waybar"
-      "discordptb"
       "steam"
       "firefox"
       "$term"
