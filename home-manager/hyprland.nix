@@ -22,7 +22,7 @@
     xwayland.enable = true;
     settings = {
       monitor = [
-        "DP-3, 1920x1080@120.15000, 0x0, 1"
+        "eDP-1, 1920x1080@120.15000, 0x0, 1"
       ];
       "$mod" = "SUPER";
       "$term" = ''
