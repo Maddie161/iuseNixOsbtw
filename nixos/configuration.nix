@@ -163,7 +163,6 @@
     tealdeer
     rustlings
     transmission_4-qt
-    bottles
     gamescope
     prismlauncher
     zig
