@@ -1,4 +1,9 @@
-{ pkgs, lib, inputs, ... }: {
+{
+  pkgs,
+  lib,
+  inputs,
+  ...
+}: {
   wayland.windowManager.hyprland.settings = {
     exec-once = [
       "swaync"
