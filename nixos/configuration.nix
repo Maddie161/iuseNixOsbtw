@@ -158,7 +158,7 @@
     git
     github-cli
     mesa
-    xclicker
+    wl-clicker
     rustup
     tealdeer
     rustlings
@@ -200,6 +200,7 @@
     dnsmasq
     ethtool
     unzip
+    
     #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     #  wget
   ];
