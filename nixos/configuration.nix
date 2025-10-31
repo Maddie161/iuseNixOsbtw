@@ -126,11 +126,11 @@
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   services.dbus.enable = true;
-  xdg.portal = {
+  services.xdg.portal = {
     enable = true;
     wlr.enable = false;
-    extraPortals = with pkgs; [
-      xdg-desktop-portal-gtk
+    extraPortals = [
+      pkgs.xdg-desktop-portal-gtk
     ];
   };
   # Enable automatic login for the user.
