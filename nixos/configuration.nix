@@ -205,7 +205,10 @@
     ethtool
     unzip
     flatpak
-    gnome-software
+    wineWowPackages.full
+    winetricks
+    vulkan-tools
+    glxinfo
     #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     #  wget
   ];
