@@ -168,6 +168,7 @@
     rustlings
     transmission_4-qt
     gamescope
+    gamemode
     prismlauncher
     zig
     gcc9
