@@ -126,7 +126,7 @@
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   services.dbus.enable = true;
-  services.xdg.portal = {
+  xdg.portal = {
     enable = true;
     wlr.enable = false;
     extraPortals = [
