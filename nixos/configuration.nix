@@ -58,8 +58,9 @@
       vulkan-tools
       vulkan-validation-layers
     ];
-    extraPackages32 = with pkgs.pkgsi686Linux; [
+   extraPackages32 = with pkgs.pkgsi686Linux; [
       vulkan-loader
+      driversi686Linux.nvidia_x11
     ];
   };
   programs.steam.enable = true;
