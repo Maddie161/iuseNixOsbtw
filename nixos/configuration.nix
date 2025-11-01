@@ -58,10 +58,10 @@
       vulkan-tools
       vulkan-validation-layers
     ];
-   extraPackages32 = with pkgs.pkgsi686Linux; [
-  vulkan-loader
-  (driversi686Linux.nvidia or nvidiaPackages.default)
-];
+    extraPackages32 = with pkgs.pkgsi686Linux; [
+        vulkan-loader
+        (driversi686Linux.nvidia or nvidiaPackages.default)
+    ];
   };
   programs.steam.enable = true;
 
@@ -138,7 +138,7 @@
 #  environment.sessionVariables = {
 #    LIBGL_DRIVERS_PATH = "${pkgs.mesa.drivers}/lib/dri";
 #    VK_ICD_FILENAMES = "${pkgs.mesa.drivers}/share/vulkan/icd.d/intel_icd.x86_64.json:${pkgs.mesa.drivers}/share/vulkan/icd.d/intel_icd.i686.json";
-  };
+# };
   xdg.portal = {
     enable = true;
     wlr.enable = false;
