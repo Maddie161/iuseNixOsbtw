@@ -52,7 +52,16 @@
   };
   hardware.opengl = {
     enable = true;
-    driSupport32Bit = true;
+    driSupport = true;
+    driSupport32Bit = true; # Needed for Steam/Proton 32-bit Vulkan
+    extraPackages = with pkgs; [
+      vulkan-loader
+      vulkan-tools
+      vulkan-validation-layers
+    ];
+    extraPackages32 = with pkgs.pkgsi686Linux; [
+      vulkan-loader
+    ];
   };
   programs.steam.enable = true;
 
