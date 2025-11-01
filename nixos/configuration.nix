@@ -52,7 +52,6 @@
   };
   hardware.opengl = {
     enable = true;
-    driSupport = true;
     driSupport32Bit = true; # Needed for Steam/Proton 32-bit Vulkan
     extraPackages = with pkgs; [
       vulkan-loader
@@ -223,7 +222,6 @@
     winetricks
     vulkan-tools
     glxinfo
-    vulkan
     #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     #  wget
   ];
