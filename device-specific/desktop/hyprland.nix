@@ -11,8 +11,9 @@
       "waybar"
       "steam"
       "firefox"
-      "$term"
       "hyprsunset -t 4500"
+      "discordptb"
+      "blueman-manager"
       "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1"
     ];
   };
