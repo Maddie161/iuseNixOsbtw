@@ -59,7 +59,7 @@
       vulkan-validation-layers
     ];
     extraPackages32 = with pkgs.pkgsi686Linux; [
-      
+
     ];
   };
   programs.steam.enable = true;
@@ -223,6 +223,7 @@
     vulkan-tools
     glxinfo
     python314
+    cmatrix
     #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     #  wget
   ];
