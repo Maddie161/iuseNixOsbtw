@@ -12,6 +12,14 @@
         position = "left";
       };
       modules = [
+        "break"
+        "break"
+        "break"
+        "break"
+        "break"
+        "break"
+        "break"
+        "break"
         {
           type = "os";
           key = " ";
