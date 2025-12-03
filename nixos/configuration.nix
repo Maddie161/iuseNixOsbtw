@@ -59,7 +59,6 @@
       vulkan-validation-layers
     ];
     extraPackages32 = with pkgs.pkgsi686Linux; [
-
     ];
   };
   programs.steam.enable = true;
