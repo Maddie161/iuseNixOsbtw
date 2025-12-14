@@ -10,4 +10,7 @@
     ./hardware-configuration.nix
   ];
   networking.hostName = "desktop";
+  environment.systemPackages = with pkgs; [
+  mapscii
+  ];
 }
