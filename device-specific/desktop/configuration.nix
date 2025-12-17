@@ -11,6 +11,6 @@
   ];
   networking.hostName = "desktop";
   environment.systemPackages = with pkgs; [
-
+    kdePackages.kolourpaint
   ];
 }
