@@ -13,5 +13,6 @@
   environment.systemPackages = with pkgs; [
     kdePackages.kolourpaint
     legendary-gl
+    rare
   ];
 }
