@@ -14,5 +14,7 @@
     kdePackages.kolourpaint
     legendary-gl
     rare
+    zig
+    zls
   ];
 }
