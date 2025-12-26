@@ -98,7 +98,6 @@
   services.xserver.enable = true;
 
   # Enable the KDE Plasma Desktop Environment.
-  services.displayManager.lemurs.enable = true;
   services.displayManager.sddm.enable = false;
   services.desktopManager.plasma6.enable = false;
   programs.hyprland.enable = true;
