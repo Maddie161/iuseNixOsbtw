@@ -31,16 +31,18 @@
   hardware.bluetooth.package = pkgs.bluez;
   hardware.bluetooth.powerOnBoot = true;
   hardware.firmware = [pkgs.linux-firmware];
+  hardware.opengl.enable = true;
   hardware.graphics = {
     enable = true;
-    enable32Bit = true;
+    extraPackages = with pkgs; [
+      vulkan-loader
+      vulkan-tools
+      vulkan-validation-layers
+    ];
+    enable32Bit = true; # Needed for Steam/Proton 32-bit Vulkan
+    extraPackages32 = with pkgs.pkgsi686Linux; [
+    ];
   };
-  nix.settings.experimental-features = [
-    "nix-command"
-    "flakes"
-  ];
-  # Load nvidia driver for Xorg
-  services.xserver.videoDrivers = ["nvidia"];
   hardware.nvidia = {
     modesetting.enable = true;
     powerManagement.enable = false;
@@ -50,17 +52,13 @@
     #Beta nvidia driver, use stable for latest stable
     package = config.boot.kernelPackages.nvidiaPackages.beta;
   };
-  hardware.opengl = {
-    enable = true;
-    driSupport32Bit = true; # Needed for Steam/Proton 32-bit Vulkan
-    extraPackages = with pkgs; [
-      vulkan-loader
-      vulkan-tools
-      vulkan-validation-layers
-    ];
-    extraPackages32 = with pkgs.pkgsi686Linux; [
-    ];
-  };
+
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
+
+  services.xserver.videoDrivers = ["nvidia"];
   programs.steam.enable = true;
 
   # Bootloader.
@@ -117,7 +115,7 @@
   services.printing.enable = true;
 
   # Enable sound with pipewire.
-  hardware.pulseaudio.enable = false;
+  services.pulseaudio.enable = false;
   services.pipewire = {
     enable = true;
     audio.enable = true;
@@ -161,7 +159,7 @@
     rust-analyzer
     zed-editor
     alejandra
-    spotify-qt
+    spotify
     steam
     r2modman
     libreoffice
@@ -172,11 +170,8 @@
     tealdeer
     rustlings
     transmission_4-qt
-    gamescope
-    gamemode
     prismlauncher
     zig
-    gcc9
     clang
     steam-run
     kitty
@@ -200,22 +195,16 @@
     nushell
     everest-mons
     masterpdfeditor
-    tetrio-desktop
     dotnetCorePackages.sdk_9_0_1xx-bin
     helix
     btop
     kdePackages.dolphin
     bridge-utils
-    nftables
     dnsmasq
-    ethtool
     unzip
-    flatpak
     wineWowPackages.full
     winetricks
-    vulkan-tools
-    glxinfo
-    python314
+    mesa-demos
     cmatrix
     #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     #  wget
