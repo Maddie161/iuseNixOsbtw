@@ -8,6 +8,7 @@
   ...
 }: {
   imports = [
+  ./grub.nix
   ];
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [
@@ -61,8 +62,6 @@
   services.xserver.videoDrivers = ["nvidia"];
   programs.steam.enable = true;
 
-  # Bootloader.
-  boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -98,7 +97,7 @@
   services.xserver.enable = true;
 
   # Enable the KDE Plasma Desktop Environment.
-  services.displayManager.sddm.enable = false;
+  services.displayManager.sddm.enable = true;
   services.desktopManager.plasma6.enable = false;
   programs.hyprland.enable = true;
   programs.hyprland.package = inputs.hyprland.packages."${pkgs.system}".hyprland;
