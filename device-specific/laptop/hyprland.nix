@@ -9,7 +9,7 @@
       "swaync"
       "blueman-applet"
       "waybar"
-      "hyprsunset -t 4500 -g 20"
+      "hyprsunset -t 4500 -g 50"
       "kitty nu -e fastfetch"
       "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1"
     ];
