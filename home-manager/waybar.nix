@@ -17,9 +17,9 @@
           "karlstav/cava"
         ];
         modules-right = [
+          "cava"
           "tray"
           "clock"
-          "karlstav/cava"
         ];
         clock = {
           interval = 60;
