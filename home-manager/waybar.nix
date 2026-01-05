@@ -14,10 +14,9 @@
           "hyprland/workspaces"
         ];
         modules-center = [
-          "karlstav/cava"
+          "cava"
         ];
         modules-right = [
-          "cava"
           "tray"
           "clock"
         ];
