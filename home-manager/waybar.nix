@@ -30,7 +30,7 @@
           framerate = 30;
           autosens = 1;
           sensitivity = 100;
-          bars = 14;
+          bars = 8;
           lower_cutoff_freq = 50;
           higher_cutoff_freq = 10000;
           hide_on_silence = false;
@@ -43,7 +43,6 @@
           waves = false;
           noise_reduction = 0.77;
           input_delay = 2;
-          format-icons = "▁ ▂ ▃ ▄ ▅ ▆ ▇ █";
           on-click-right = "mode";
         };
         "custom/power" = {
