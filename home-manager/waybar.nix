@@ -43,16 +43,7 @@
           waves = false;
           noise_reduction = 0.77;
           input_delay = 2;
-          format-icons = {
-            "1" = "▁";
-            "2" = "▂";
-            "3" = "▃";
-            "4" = "▄";
-            "5" = "▅";
-            "6" = "▆";
-            "7" = "▇";
-            "8" = "█";
-          };
+          format-icons = "▁▂▃▄▅▆▇█";
           on-click-right = "mode";
         };
         "custom/power" = {
