@@ -34,13 +34,13 @@
           lower_cutoff_freq = 50;
           higher_cutoff_freq = 10000;
           hide_on_silence = false;
-          method = "pulse";
+          method = "pipewire";
           source = "auto";
           stereo = true;
           reverse = false;
           bar_delimiter = 0;
-          monstercat = false;
-          waves = false;
+          monstercat = true;
+          waves = true;
           noise_reduction = 0.77;
           input_delay = 2;
           format-icons = "▁▂▃▄▅▆▇█";
