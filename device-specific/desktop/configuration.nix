@@ -15,5 +15,6 @@
     legendary-gl
     rare
     zls
+    cava
   ];
 }

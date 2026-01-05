@@ -14,11 +14,12 @@
           "hyprland/workspaces"
         ];
         modules-center = [
-          "mpris"
+          "karlstav/cava"
         ];
         modules-right = [
           "tray"
           "clock"
+          "karlstav/cava"
         ];
         clock = {
           interval = 60;
