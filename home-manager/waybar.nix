@@ -14,7 +14,7 @@
           "hyprland/workspaces"
         ];
         modules-center = [
-          "cava"
+          "mpris"
         ];
         modules-right = [
           "tray"
@@ -26,25 +26,16 @@
           format = "{:%H.%M}";
           tooltip-format = "{:%a, %d-%m-%Y}";
         };
-        "cava" = {
-          framerate = 30;
-          autosens = 1;
-          sensitivity = 100;
-          bars = 8;
-          lower_cutoff_freq = 50;
-          higher_cutoff_freq = 10000;
-          hide_on_silence = false;
-          method = "pipewire";
-          source = "auto";
-          stereo = true;
-          reverse = false;
-          bar_delimiter = 0;
-          monstercat = true;
-          waves = true;
-          noise_reduction = 0.77;
-          input_delay = 2;
-          format-icons = "▁▂▃▄▅▆▇█";
-          on-click-right = "mode";
+        mpris = {
+          format = "DEFAULT: {player_icon} {dynamic}";
+          format-paused = "DEFAULT: {status_icon} <i>{dynamic}</i>";
+          player-icons = {
+          default = "▶";
+          mpv = "🎵";
+          };
+          status-icons = {
+            paused = "⏸";
+          };
         };
         "custom/power" = {
           format = " pwr";
