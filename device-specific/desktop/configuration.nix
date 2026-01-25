@@ -16,6 +16,6 @@
     rare
     zls
     cava
-    quickshell
+    spotifywm
   ];
 }
