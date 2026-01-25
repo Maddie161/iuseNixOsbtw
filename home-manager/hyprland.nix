@@ -28,7 +28,7 @@
       "$term" = ''
         kitty nu -e fastfetch
       '';
-      "$runner" = "qs -c noctalia-shell ipc call launcher toggle";
+      "$runner" = "qs -c noctalia-shell ipc call launcher command";
       "$screenshotter" = "hyprshot --mode region --clipboard-only";
 
       bind =
