@@ -17,5 +17,6 @@
     zls
     cava
     quickshell
+    spotifyd
   ];
 }
