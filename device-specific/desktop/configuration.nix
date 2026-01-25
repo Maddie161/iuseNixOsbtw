@@ -16,5 +16,6 @@
     rare
     zls
     cava
+    quickshell
   ];
 }
