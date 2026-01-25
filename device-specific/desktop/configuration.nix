@@ -16,6 +16,5 @@
     rare
     zls
     cava
-    spotifywm
   ];
 }
