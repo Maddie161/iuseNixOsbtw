@@ -28,7 +28,7 @@
       "$term" = ''
         kitty nu -e fastfetch
       '';
-      "$runner" = "wofi --show drun";
+      "$runner" = "qs -c noctalia-shell ipc call launcher toggle";
       "$screenshotter" = "hyprshot --mode region --clipboard-only";
 
       bind =
