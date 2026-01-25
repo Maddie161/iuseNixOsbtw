@@ -65,9 +65,9 @@
 
           "$mod SHIFT, F, fullscreen"
 
-          "$mod, B, exec, firefox"
-
           "$mod, D, exec, $runner"
+
+          "$mod, R, exec, noctalia-shell ipc call launcher clipboard"
 
           "$mod SHIFT, S, exec, $screenshotter"
 
