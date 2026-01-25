@@ -17,6 +17,6 @@
     zls
     cava
     quickshell
-    spotifyd
+    spotify-qt
   ];
 }
