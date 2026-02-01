@@ -6,6 +6,9 @@
 }: {
   wayland.windowManager.hyprland.settings = {
     exec-once = [
+      #"swaync"
+      #"waybar"
+      #"hyprsunset -t 4500 -g 50"
       "blueman-applet"
       "noctalia-shell"
       "kitty nu -e fastfetch"
