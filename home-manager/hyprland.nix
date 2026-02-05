@@ -67,7 +67,7 @@
 
           "$mod, D, exec, $runner"
 
-          "$mod, R, exec, noctalia-shell ipc call launcher clipboard"
+          "$mod, -, exec, noctalia-shell ipc call volume decrease"
 
           "$mod SHIFT, S, exec, $screenshotter"
 
