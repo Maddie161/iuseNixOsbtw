@@ -67,7 +67,9 @@
 
           "$mod, D, exec, $runner"
 
-          "$mod, -, exec, noctalia-shell ipc call volume decrease"
+          "$mod, MINUS, exec, noctalia-shell ipc call volume decrease"
+
+          "$mod, PLUS, exec, noctalia-shell ipc call volume increase"
 
           "$mod SHIFT, S, exec, $screenshotter"
 
