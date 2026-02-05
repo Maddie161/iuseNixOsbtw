@@ -71,13 +71,13 @@
 
           "$mod, PLUS, exec, noctalia-shell ipc call volume increase"
 
-          "$mod, N, exec, noctalie-shell ipc call media next"
+          "$mod, N, exec, noctalia-shell ipc call media next"
 
-          "$mod, P, exec, noctalie-shell ipc call media previous"
+          "$mod, P, exec, noctalia-shell ipc call media previous"
 
-          "$mod, M, exec, noctalie-shell ipc call media stop"
+          "$mod, M, exec, noctalia-shell ipc call media stop"
 
-          "$mod, K, exec, noctalie-shell ipc call media play"
+          "$mod, K, exec, noctalia-shell ipc call media play"
 
           "$mod SHIFT, S, exec, $screenshotter"
 
