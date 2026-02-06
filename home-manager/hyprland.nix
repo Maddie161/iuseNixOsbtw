@@ -79,6 +79,8 @@
 
           "$mod, K, exec, noctalia-shell ipc call media play"
 
+          "$mod,"
+
           "$mod SHIFT, S, exec, $screenshotter"
 
           "$mod, Q, killactive,"

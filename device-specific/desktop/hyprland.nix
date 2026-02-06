@@ -15,6 +15,7 @@
       "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1"
       "spotify"
       "noctalia-shell"
+      "wl-paste --watch cliphist store"
     ];
   };
 }
