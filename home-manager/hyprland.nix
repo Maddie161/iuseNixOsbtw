@@ -53,6 +53,8 @@
 
           "$mod, K, exec, noctalia-shell ipc call media play"
 
+          "$mod, C, exec, noctalia-shell ipc call plugin:clipper openPanel"
+
           "$mod SHIFT, S, exec, $screenshotter"
 
           "$mod, Q, killactive,"
