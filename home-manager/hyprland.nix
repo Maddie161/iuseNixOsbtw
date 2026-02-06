@@ -33,32 +33,6 @@
 
       bind =
         [
-          #focus moving
-          "$mod, H, movefocus, l"
-
-          "$mod, L, movefocus, r"
-
-          "$mod, K, movefocus, u"
-
-          "$mod, J, movefocus, d"
-
-          #window moving
-          "$mod SHIFT, H, movewindow, l"
-
-          "$mod SHIFT, L, movewindow, r"
-
-          "$mod SHIFT, K, movewindow, u"
-
-          "$mod SHIFT, J, movewindow, d"
-
-          "$mod CONTROL_L, L, resizeactive, -40 0"
-
-          "$mod CONTROL_L, H, resizeactive, 40 0"
-
-          "$mod CONTROL_L, K, resizeactive, 0 40"
-
-          "$mod CONTROL_L, J, resizeactive, 0 -40"
-
           "$mod, T, exec, $term"
 
           "$mod, F, togglefloating"
@@ -78,8 +52,6 @@
           "$mod, M, exec, noctalia-shell ipc call media stop"
 
           "$mod, K, exec, noctalia-shell ipc call media play"
-
-          "$mod,"
 
           "$mod SHIFT, S, exec, $screenshotter"
 
