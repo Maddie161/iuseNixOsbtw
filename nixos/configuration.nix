@@ -98,7 +98,8 @@
   services.xserver.enable = true;
 
   # Enable the KDE Plasma Desktop Environment.
-  services.displayManager.sddm.enable = true;
+  # services.displayManager.sddm.enable = true;
+  services.displayManager.ly.enable = true;
   services.desktopManager.plasma6.enable = false;
   programs.hyprland.enable = true;
   programs.hyprland.package = inputs.hyprland.packages."${pkgs.system}".hyprland;
@@ -143,7 +144,7 @@
     ];
   };
   # Enable automatic login for the user.
-  services.xserver.displayManager.autoLogin.enable = true;
+  services.xserver.displayManager.autoLogin.enable = false;
   services.xserver.displayManager.autoLogin.user = "maddie";
   # Install firefox.
   programs.firefox.enable = true;
@@ -208,6 +209,7 @@
     cmatrix
     cliphist
     wl-clipboard
+    ly
     #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     #  wget
   ];
