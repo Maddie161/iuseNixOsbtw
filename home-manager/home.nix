@@ -14,13 +14,11 @@
   };
   home.stateVersion = "23.05";
   programs.home-manager.enable = true;
-  programs.git = {
+  programs.git.settings = {
     enable = true;
-    userName = "maddie";
-    userEmail = "madelinebold@gmail.com";
-    extraConfig = {
-      pull.rebase = "true";
-    };
+    pull.rebase = "true";
+    user.name = "maddie";
+    user.email = "madelinebold161@gmail.com";
   };
 
   programs.kitty = {
