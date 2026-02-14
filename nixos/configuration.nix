@@ -145,7 +145,7 @@
   };
   # Enable automatic login for the user.
   services.displayManager.autoLogin.enable = false;
-  services.xserver.displayManager.autoLogin.user = "maddie";
+  services.displayManager.autoLogin.user = "maddie";
   # Install firefox.
   programs.firefox.enable = true;
 
