@@ -10,6 +10,7 @@
   imports = [
     ./grub.nix
     ./noctalia.nix
+    ./plymouth.nix
   ];
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [
@@ -210,6 +211,7 @@
     cliphist
     wl-clipboard
     ly
+    plymouth
     #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     #  wget
   ];
