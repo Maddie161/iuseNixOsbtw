@@ -17,5 +17,6 @@
     zls
     cava
     spotify-qt
+    zoom-us
   ];
 }
