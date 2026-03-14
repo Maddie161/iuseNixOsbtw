@@ -18,5 +18,6 @@
     cava
     spotify-qt
     zoom-us
+    bottles-unwrapped
   ];
 }
