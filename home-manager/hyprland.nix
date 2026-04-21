@@ -22,8 +22,8 @@
     xwayland.enable = true;
     settings = {
       monitor = [
-        "eDP-1, 1920x1080@120.15000, 0x0, 1"
         "DP-3, 1920x1080@144.00, 0x0, 1"
+        "HDMI-A-1, 1920x1080@120.15000, 0x0, 1"
       ];
       "$mod" = "SUPER";
       "$term" = ''
@@ -59,6 +59,10 @@
           "$mod SHIFT, S, exec, $screenshotter"
 
           "$mod, Q, killactive,"
+
+          "$mod, left, movecurrentworkspacetomonitor, 0"
+
+          "$mod, right, movecurrentworkspacetomonitor, 1"
         ]
         ++ (
           # workspaces
