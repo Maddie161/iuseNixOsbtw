@@ -60,9 +60,9 @@
 
           "$mod, Q, killactive,"
 
-          "$mod, left, movecurrentworkspacetomonitor, 0"
+          "$mod, left, movecurrentworkspacetomonitor, 1"
 
-          "$mod, right, movecurrentworkspacetomonitor, 1"
+          "$mod, right, movecurrentworkspacetomonitor, 0"
         ]
         ++ (
           # workspaces
