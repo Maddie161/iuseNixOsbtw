@@ -34,7 +34,7 @@
   hardware.bluetooth.package = pkgs.bluez;
   hardware.bluetooth.powerOnBoot = true;
   hardware.firmware = [pkgs.linux-firmware];
-  #hardware.opengl.enable = true;
+  hardware.opengl.enable = true;
   hardware.graphics = {
     enable = true;
     extraPackages = with pkgs; [
