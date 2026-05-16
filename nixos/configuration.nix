@@ -34,7 +34,7 @@
   hardware.bluetooth.package = pkgs.bluez;
   hardware.bluetooth.powerOnBoot = true;
   hardware.firmware = [pkgs.linux-firmware];
-  hardware.opengl.enable = true;
+  # hardware.opengl.enable = true;
   hardware.graphics = {
     enable = true;
     extraPackages = with pkgs; [
@@ -133,10 +133,10 @@
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   services.dbus.enable = true;
-  environment.sessionVariables = {
-    LIBGL_DRIVERS_PATH = "${pkgs.mesa.drivers}/lib/dri";
-    VK_ICD_FILENAMES = "${pkgs.mesa.drivers}/share/vulkan/icd.d/intel_icd.x86_64.json:${pkgs.mesa.drivers}/share/vulkan/icd.d/intel_icd.i686.json";
-  };
+  #  environment.sessionVariables = {
+  #    LIBGL_DRIVERS_PATH = "${pkgs.mesa.drivers}/lib/dri";
+  #    VK_ICD_FILENAMES = "${pkgs.mesa.drivers}/share/vulkan/icd.d/intel_icd.x86_64.json:${pkgs.mesa.drivers}/share/vulkan/icd.d/intel_icd.i686.json";
+  #  };
   xdg.portal = {
     enable = true;
     wlr.enable = false;
