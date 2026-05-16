@@ -171,7 +171,7 @@
     rustup
     tealdeer
     rustlings
-    transmission_4-qt
+    
     prismlauncher
     zig
     clang
