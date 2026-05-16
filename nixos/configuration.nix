@@ -53,7 +53,7 @@
     open = false;
     nvidiaSettings = true;
     #Beta nvidia driver, use stable for latest stable
-    package = config.boot.kernelPackages.nvidiaPackages.beta;
+    package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
 
   nix.settings.experimental-features = [
