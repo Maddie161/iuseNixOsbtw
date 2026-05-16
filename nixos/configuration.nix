@@ -172,6 +172,7 @@
     tealdeer
     rustlings
     transmission_4-qt
+    qbittorrent
     prismlauncher
     zig
     clang
