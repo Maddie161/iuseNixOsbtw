@@ -53,7 +53,7 @@
     open = false;
     nvidiaSettings = true;
     #Beta nvidia driver, use stable for latest stable
-    package = config.boot.kernelPackages.nvidiaPackages.stable;
+    package = config.boot.kernelPackages.nvidiaPackages.beta;
   };
 
   nix.settings.experimental-features = [
@@ -216,7 +216,6 @@
     unp
     unrar-free
     directx-headers
-    winetricks
     #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     #  wget
   ];
