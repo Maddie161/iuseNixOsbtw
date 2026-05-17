@@ -34,7 +34,7 @@
   hardware.bluetooth.package = pkgs.bluez;
   hardware.bluetooth.powerOnBoot = true;
   hardware.firmware = [pkgs.linux-firmware];
-  # hardware.opengl.enable = true;
+  #hardware.opengl.enable = false;
   hardware.graphics = {
     enable = true;
     extraPackages = with pkgs; [
@@ -53,7 +53,7 @@
     open = false;
     nvidiaSettings = true;
     #Beta nvidia driver, use stable for latest stable
-    package = config.boot.kernelPackages.nvidiaPackages.beta;
+    package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
 
   nix.settings.experimental-features = [
