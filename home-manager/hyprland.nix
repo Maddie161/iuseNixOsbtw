@@ -84,6 +84,9 @@
         kb_layout = [
           "de"
         ];
+        env = [
+          "ELECTRON_OZONE_PLATFORM_HINT, wayland"
+        ];
       };
       windowrulev2 = [
         #"tag +pip, title:(Picture.?in.?[Pp]icture)"
