@@ -155,7 +155,9 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-
+    (discord-ptb.override {
+      withVencord = true;
+    })
     rust-analyzer
     zed-editor
     alejandra
