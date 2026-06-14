@@ -29,7 +29,7 @@
       "$term" = ''
         kitty nu -e fastfetch
       '';
-      "$runner" = "noctalia msg launcher-toggle";
+      "$runner" = "noctalia msg panel-open launcher";
       "$screenshotter" = "hyprshot --mode region --clipboard-only";
 
       bind =
