@@ -29,7 +29,7 @@
       "$term" = ''
         kitty nu -e fastfetch
       '';
-      "$runner" = "noctalia-shell ipc call launcher toggle";
+      "$runner" = "noctalia ipc call launcher toggle";
       "$screenshotter" = "hyprshot --mode region --clipboard-only";
 
       bind =
@@ -53,8 +53,6 @@
           "$mod, M, exec, noctalia-shell ipc call media stop"
 
           "$mod, K, exec, noctalia-shell ipc call media play"
-
-          "$mod, C, exec, noctalia ipc call plugin:clipper openPanel"
 
           "$mod SHIFT, S, exec, $screenshotter"
 
