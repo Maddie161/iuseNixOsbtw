@@ -14,7 +14,7 @@
       "discordptb"
       "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1"
       "spotify"
-      "noctalia-shell"
+      "noctalia"
       "wl-paste --watch cliphist store"
     ];
   };
