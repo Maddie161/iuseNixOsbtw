@@ -29,7 +29,7 @@
       "$term" = ''
         kitty nu -e fastfetch
       '';
-      "$runner" = "noctalia ipc call launcher toggle";
+      "$runner" = "noctalia call launcher toggle";
       "$screenshotter" = "hyprshot --mode region --clipboard-only";
 
       bind =
