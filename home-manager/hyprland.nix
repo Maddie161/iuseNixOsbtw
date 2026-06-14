@@ -42,13 +42,13 @@
 
           "$mod, D, exec, $runner"
 
-          "$mod, N, exec, noctalia msg media-next"
+          "$mod, N, exec, noctalia msg media next"
 
-          "$mod, P, exec, noctalia msg media-previous"
+          "$mod, P, exec, noctalia msg media previous"
 
-          "$mod, M, exec, noctalia msg media-stop"
+          "$mod, M, exec, noctalia msg media stop"
 
-          "$mod, K, exec, noctalia msg media-play"
+          "$mod, K, exec, noctalia msg media play"
 
           "$mod SHIFT, S, exec, $screenshotter"
 
