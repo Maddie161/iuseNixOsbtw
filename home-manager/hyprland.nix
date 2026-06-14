@@ -29,7 +29,7 @@
       "$term" = ''
         kitty nu -e fastfetch
       '';
-      "$runner" = "noctalia call launcher toggle";
+      "$runner" = "noctalia msg launcher-toggle";
       "$screenshotter" = "hyprshot --mode region --clipboard-only";
 
       bind =
@@ -42,17 +42,13 @@
 
           "$mod, D, exec, $runner"
 
-          "$mod, MINUS, exec, noctalia-shell ipc call volume decrease"
+          "$mod, N, exec, noctalia msg media-next"
 
-          "$mod, PLUS, exec, noctalia-shell ipc call volume increase"
+          "$mod, P, exec, noctalia msg media-previous"
 
-          "$mod, N, exec, noctalia-shell ipc call media next"
+          "$mod, M, exec, noctalia msg media-stop"
 
-          "$mod, P, exec, noctalia-shell ipc call media previous"
-
-          "$mod, M, exec, noctalia-shell ipc call media stop"
-
-          "$mod, K, exec, noctalia-shell ipc call media play"
+          "$mod, K, exec, noctalia msg media-play"
 
           "$mod SHIFT, S, exec, $screenshotter"
 
