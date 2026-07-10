@@ -149,19 +149,17 @@
   services.displayManager.autoLogin.user = "maddie";
   # Install firefox.
   programs.firefox.enable = true;
-
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     (discord-ptb.override {
-          withVencord = true;
-        })
+      withVencord = true;
+    })
     rust-analyzer
     zed-editor
     alejandra
-    spotify
     steam
     r2modman
     libreoffice
