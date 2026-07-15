@@ -52,7 +52,6 @@
     powerManagement.finegrained = false;
     open = false;
     nvidiaSettings = true;
-    #Beta nvidia driver, use stable for latest stable
     package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
 
