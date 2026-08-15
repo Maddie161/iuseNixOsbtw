@@ -458,6 +458,26 @@
         "type": "github"
       }
     },
+    "olympus": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1683413112,
+        "narHash": "sha256-AcDUmt6fjtYcD6+HLeX25T8Gh5VY53Yp8erKSieabyg=",
+        "owner": "spencerpogo",
+        "repo": "olympus-nix",
+        "rev": "0745087d254b83c9199bbbe43911f73104a404a2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "spencerpogo",
+        "repo": "olympus-nix",
+        "type": "github"
+      }
+    },
     "pre-commit-hooks": {
       "inputs": {
         "flake-compat": "flake-compat",
@@ -507,6 +527,7 @@
         "nixpkgs": "nixpkgs_2",
         "nixpkgsstable24": "nixpkgsstable24",
         "noctalia": "noctalia",
+        "olympus": "olympus",
         "quickshell": "quickshell"
       }
     },
