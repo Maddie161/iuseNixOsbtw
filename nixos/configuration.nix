@@ -54,7 +54,7 @@
     nvidiaSettings = true;
     package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
-
+  services.flatpak.enable = true;
   nix.settings.experimental-features = [
     "nix-command"
     "flakes"
@@ -218,6 +218,7 @@
     fuse2
     appimage-run
     love
+    flatpak
     #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     #  wget
   ];
