@@ -215,12 +215,6 @@
     directx-headers
     ryubing
     protonup-rs
-    fuse2
-    appimage-run
-    love
-    flatpak
-    glibc
-    bubblewrap
     (olympus.override {
         celesteWrapper = "steam-run";
       })
