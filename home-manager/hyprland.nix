@@ -19,7 +19,7 @@
   # Variables for Hostnames
   wayland.windowManager.hyprland = {
     enable = true;
-    configType = "hyprlang";
+    #configType = "hyprlang";
     xwayland.enable = true;
     settings = {
       monitor = [
