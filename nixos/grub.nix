@@ -17,6 +17,7 @@ in {
     efiSupport = true;
     #efiInstallAsRemovable = true;
     device = "nodev";
+    configurationLimit = 3;
     theme = ./catppuccin-mocha-grub-theme;
     #useOSProber = true;
   };
