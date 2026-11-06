@@ -204,8 +204,6 @@
     bridge-utils
     dnsmasq
     unzip
-    wineWowPackages.full
-    winetricks
     mesa-demos
     cmatrix
     cliphist
